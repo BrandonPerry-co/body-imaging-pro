@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3298dc;
+    width: 100vw;
+    height: 100vh;
+}
+.iphone {
+    height: 550px;
+    width: 500px;
+    margin-top: -200px;
+
+}
+#hero{
+    margin-left: 30px;
+}
+#hero h1 {
+    font-size: 45px;
+}
+.hero-body{
+    height: 80vh;
+}
+
+.column-2 {
+    float: left;
+    width: 45%;
+    padding: 40px;
+    padding-left:70px;
+    padding-right: 70px;
+    height: 475px;
+    margin:30px;
+    margin-right:30px;
+    margin-bottom: 70px;
+    background-color: #3298dc;
+    color: white;
+    line-height:2;
+  }
+
+  .large-profile {
+    background: url('./img/pexels-andrea-piacquadio-905336.jpg');
+    /* height: 400px;
+    width: 500px; */
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color:#3298dc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #081d2b;
+  }
+  
+  .form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.form{
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 200px;
+}
+
+
+@media only screen and (max-width: 650px) {
+    body {
+      background-color: lightblue;
+    }
+    .iphone {
+        display: flex;
+        height: 550px;
+        width: 450px;
+        margin-top: -105px;
+        
+        
+        align-items: center;
+        justify-content: center;
+    }
+    #hero{
+        margin-left: 30px;
+    }
+    #hero h1 {
+        font-size: 60px;
+    }
+    #hero p{
+        visibility: hidden;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    span.navbar-burger{
+        color: whitesmoke;
+        font-size: 50px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    .column-2 {
+        float: left;
+        width: 100%;
+       
+        padding-left:70px;
+        padding-right: 70px;
+        height: 475px;
+        
+        margin-right:30px;
+        margin-bottom: 70px;
+        background-color: #3298dc;
+        color: white;
+        line-height:2;
+      }
+    
+      .large-profile {
+        background: url('./img/pexels-andrea-piacquadio-905336.jpg');
+        /* height: 400px;
+        width: 500px; */
+        background-size: cover;
+        background-position: center;
+      }
+  }
